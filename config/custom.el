@@ -11,7 +11,7 @@
    ["gray35" "#a60000" "#005e00" "#813e00" "#0031a9" "#721045" "#00538b" "gray65"])
  '(awesome-tray-mode-line-active-color "#0031a9")
  '(awesome-tray-mode-line-inactive-color "#d7d7d7")
- '(clojure-indent-style 'always-indent)
+ '(clojure-indent-style 'align-arguments)
  '(completion-styles '(basic partial-completion emacs22 initials flex))
  '(custom-safe-themes
    '("0568a5426239e65aab5e7c48fa1abde81130a87ddf7f942613bf5e13bf79686b" "d6da24347c813d1635a217d396cf1e3be26484fd4d05be153f3bd2b293d2a0b5" "2b502f6e3bf0cba42fe7bf83a000f2d358a7020a7780a8682fcfed0c9dbffb5f" default))
@@ -63,16 +63,12 @@
  '(pdf-view-midnight-colors '("#000000" . "#f8f8f8"))
  '(recentf-auto-cleanup 'never)
  '(safe-local-variable-values
-   '((inf-clojure-custom-startup . "clojure -A:test:dev:aws:silent")
+   '((projectile-project-type . clojure-cli)
+     (inf-clojure-custom-startup . "clojure -A:test:dev:aws:silent")
      (cider-clojure-cli-global-options . "-A:test:dev:aws:silent")
      (inf-clojure-custom-startup . "clojure -A:test:dev")
      (cider-clojure-cli-global-options . "-A:test:dev")
      (inf-clojure-custom-startup . "clojure -A:dev:test")
-     (cider-known-endpoints
-      ("Replion local" "localhost" "3001")
-      ("Replion dev" "localhost" "3002")
-      ("Replion uat" "localhost" "3003")
-      ("Replion prod" "localhost" "3004"))
      (cider-clojure-cli-global-options . "-A:dev:test")
      (inf-clojure-custom-repl-type . clojure)
      (inf-clojure-custom-startup . "clojure -A:silent:dev:test:aws")
